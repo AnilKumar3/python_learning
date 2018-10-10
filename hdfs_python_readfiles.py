@@ -11,7 +11,7 @@ def run_cmd(args_list):
         return s_return, s_output, s_err
 
 #Run Hadoop ls command in Python to get all the files
-(ret, out, err)= run_cmd(['hdfs', 'dfs', '-ls', '/raw/LOGGING/hdp_application_audit/2018/10/07/'])
+(ret, out, err)= run_cmd(['hdfs', 'dfs', '-ls', '/raw/LOGGING/hdp_application_xxxx/2018/10/07/'])
 for lines in out.split('\n'):
         file1 = '/'+lines.split(" /")[-1]
         print file1
